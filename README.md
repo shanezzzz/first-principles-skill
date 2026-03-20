@@ -86,22 +86,26 @@ Design the cleanest solution that preserves only the hard constraints and verifi
 - **output-patterns.md** — structured response formats
 - **anti-patterns.md** — guidance to avoid shallow contrarianism or empty abstraction
 
-## Installation
+## Install
 
-### Option 1: Install from packaged `.skill`
-Use the packaged release artifact:
+Install from GitHub with the Skills CLI:
 
-```text
-dist/first-principles.skill
+```bash
+npx skills add shanezzzz/first-principles-skill
 ```
 
-### Option 2: Use the source skill directory
-Use the `first-principles/` folder directly in environments that load skills from source directories.
+You can also inspect the package before installing:
+
+```bash
+npx skills add shanezzzz/first-principles-skill --list
+```
 
 ## Repository contents
 
-- `first-principles/` — source skill
-- `dist/first-principles.skill` — packaged skill artifact
+- `SKILL.md` — primary skill definition
+- `Workflows/` — modular reasoning workflows
+- `references/` — domain-specific guidance and examples
+- `release/first-principles.skill` — packaged skill artifact
 
 ## Design goals
 
